@@ -12,7 +12,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-jar {
+task executableJar(type: Jar, group: 'build', description: 'Creates an executable jar with all the dependencies packed within.') {
+    from files(sourceSets.main.output.classesDir)
+    from configurations.runtime.asFileTree.files.collect { zipTree(it) }
+
     manifest {
         attributes 'Main-Class': 'com.example.App'
     }
