@@ -19,3 +19,6 @@ Now you should be able to open your browser and navigate to the url posted above
 The following REST endpoints are available with the application.
 
 ```/user```
+
+### References
+[Guide](http://guides.grails.org/rest-hibernate/guide/index.html) to generate REST ready project in Grails.
