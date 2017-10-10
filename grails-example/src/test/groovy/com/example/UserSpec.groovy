@@ -18,7 +18,7 @@ class UserSpec extends Specification {
     void "save"() {
         given: 'The domain class is initialized'
             domain.name = 'foo'
-            domain.password = 'bar'
+            domain.password = 'bar123!$'
         and: 'The domain instance is saved'
             domain.save()
         expect:'The id should be automatically generated'
