@@ -2,7 +2,7 @@ package com.example.validations
 
 import spock.lang.Specification
 
-class PasswordTest extends Specification {
+class PasswordSpec extends Specification {
 
     void "strength when password does not have enough letters"() {
         when: 'password does not have enough letters'
