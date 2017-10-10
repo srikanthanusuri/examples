@@ -9,7 +9,10 @@ class BootStrap {
 
         for (int i = 0; i < 100; i++) {
             def name = RandomStringUtils.randomAlphabetic(5)
-            def password = RandomStringUtils.randomAlphanumeric(10)
+            def alphanumeric = RandomStringUtils.randomAlphanumeric(10)
+            def numeric = RandomStringUtils.randomNumeric(3)
+            def punctuation = RandomStringUtils.random(1, '!@#$%')
+            def password = "$alphanumeric$numeric$punctuation"
             new User(name: name, password: password).save()
         }
     }
