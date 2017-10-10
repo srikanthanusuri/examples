@@ -12,7 +12,7 @@ class Password {
             return 'not.enough.digits'
         }
 
-        def punctuationMatcher = (val =~ /[!@#\u0024%^&*]/)
+        def punctuationMatcher = (val =~ /\p{Punct}/)
         if(punctuationMatcher.count == 0) {
             return 'not.enough.punctuations'
         }
