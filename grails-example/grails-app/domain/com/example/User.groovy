@@ -3,9 +3,17 @@ package com.example
 import com.example.validations.Password
 import org.grails.datastore.gorm.GormEntity
 
+import javax.xml.bind.annotation.XmlAccessType
+import javax.xml.bind.annotation.XmlAccessorType
+import javax.xml.bind.annotation.XmlElement
+import javax.xml.bind.annotation.XmlTransient
+
+@XmlAccessorType(XmlAccessType.NONE)
 class User implements GormEntity<User> {
 
+    @XmlElement
     String name
+    @XmlTransient
     String password
 
     static constraints = {

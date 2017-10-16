@@ -32,6 +32,10 @@ endpoints:
     jmx:
         enabled: true
 
+cxf:
+    servlet:
+        mapping: /webservices/*
+
 ---
 grails:
     mime:
