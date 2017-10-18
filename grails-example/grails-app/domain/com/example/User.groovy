@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlElement
 class User implements GormEntity<User> {
 
     @XmlElement
-    long id
+    Long id
     @XmlElement
     String name
     @XmlElement
