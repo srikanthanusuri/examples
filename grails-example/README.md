@@ -1,5 +1,12 @@
 # Grails Rest Project Example
 
+### Initialize the database
+You will need to create a database prior to running the application. Please run the file `src/test/db/init.sql` in your MySQL database as a `root` user.
+
+```
+$> mysql -h localhost -u root -p<your root password> < <path to the workspace>/src/test/db/init.sql
+```
+
 ### Run the application
 To run the application, open the command prompt and execute the following command.
 
