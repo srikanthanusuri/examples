@@ -17,8 +17,6 @@ class BootStrap {
         }
     }
     def destroy = {
-        User.withNewSession {
-            User.deleteAll()
-        }
+
     }
 }
